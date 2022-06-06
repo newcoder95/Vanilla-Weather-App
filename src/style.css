@@ -1,0 +1,45 @@
+body {
+   background: url('../src/img/bg1.jpg');
+   background-position: 0 0;
+   background-repeat: no-repeat;
+   background-size: cover;
+   font-family: 'Fredoka One';
+}
+
+.container {
+   /* display: flex;
+   flex-direction: column;
+   align-items: center; */
+   /* min-height: 100vh;
+   justify-content: center; */
+
+}
+
+.weather-container {
+   max-width: 800px;
+   margin: 50px auto;
+   padding: 20px;
+   border: 3px solid #4d96c3;
+   border-radius: 5px;
+   background-color: rgba(255, 255, 255, 0.6);
+}
+
+h1 {
+   font-size: 28px;
+   line-height: 28px;
+   color: #3b7faa;
+}
+
+ul {
+   margin: 0;
+   padding: 0;
+}
+
+li {
+   list-style: none;
+   font-size: 16px;
+   line-height: 19px;
+   color: #5697bf;
+   margin: 0;
+   padding: 0;
+}
