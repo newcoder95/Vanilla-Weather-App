@@ -1,28 +1,12 @@
 body {
    background: url('../src/img/bg1.jpg');
    background-position: 0 0;
-   background-repeat: no-repeat;
+   background-repeat: repeat;
    background-size: cover;
-   font-family: 'Fredoka One';
+   font-family: 'Mali';
 }
 
-.container {
-   /* display: flex;
-   flex-direction: column;
-   align-items: center; */
-   /* min-height: 100vh;
-   justify-content: center; */
 
-}
-
-.weather-container {
-   max-width: 800px;
-   margin: 50px auto;
-   padding: 20px;
-   border: 3px solid #4d96c3;
-   border-radius: 5px;
-   background-color: rgba(255, 255, 255, 0.6);
-}
 
 h1 {
    font-size: 28px;
@@ -42,4 +26,45 @@ li {
    color: #5697bf;
    margin: 0;
    padding: 0;
+}
+
+.container {}
+
+.weather-wrapper {
+   max-width: 800px;
+   margin: 50px auto;
+   width: 100%;
+}
+
+.weather-container {
+
+   padding: 20px;
+   border: 3px solid #4d96c3;
+   border-radius: 5px;
+   background-color: rgba(255, 255, 255, 0.6);
+}
+
+.overview{
+   margin-bottom: 30px;
+}
+.weather-temperature img{
+margin-right: 5px;
+height: 64px;
+width: 64px;
+
+}
+.weather-temperature strong{
+   color: #5697bf;
+   font-size: 64px;
+   line-height: 1;
+   font-weight: 400;
+}
+
+.weather-temperature .units{
+   position: relative;
+   font-size: 16px;
+   top: -34px;
+}
+a{
+   text-decoration: none;
 }

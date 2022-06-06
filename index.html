@@ -7,40 +7,50 @@
    <meta name="viewport" content="width=h1, initial-scale=1.0">
    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
       integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-       <link rel="preconnect" href="https://fonts.googleapis.com">
-   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-   <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Mali:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
    <link rel="stylesheet" href="src/style.css">
    <title>☔Vanilla Weather App</title>
 </head>
 
 <body>
    <div class="container">
-      <div class="weather-container">
-         <h1 class="city">New York</h1>
-         <ul>
-            <li>Monday 15:56</li>
-            <li>
-               Clear
-            </li>
-         </ul>
-         <div class="row">
-            <div class="col-6">
-               <img src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png" alt="sunny">
-               12°C | °F
-            </div>
-            <div class="col-6">
+      <div class="weather-wrapper">
+         <div class="weather-container">
+            <div class="overview">
+               <h1 class="city">New York</h1>
                <ul>
+                  <li>Monday 15:56</li>
                   <li>
-                     Precipitation: 0%
-                  </li>
-                  <li>
-                     Humidity: 73%
-                  </li>
-                  <li>
-                     Wind: 2 km/h
+                     Clear
                   </li>
                </ul>
+               <div class="row">
+                  <div class="col-6">
+                     <div class="clearfix weather-temperature">
+                        <img src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png" alt="sunny"
+                           class="float-start">
+                        <div class="float-start">
+                          <strong>12</strong>
+                          <span class="units">°C | <a href="#">°F</a></span> 
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-6">
+                     <ul>
+                        <li>
+                           Precipitation: 0%
+                        </li>
+                        <li>
+                           Humidity: 73%
+                        </li>
+                        <li>
+                           Wind: 2 km/h
+                        </li>
+                     </ul>
+                  </div>
+               </div>
             </div>
          </div>
          <small>
@@ -49,6 +59,7 @@
             by NewCoder
          </small>
       </div>
+
    </div>
    <script src="src/app.js">
    </script>
