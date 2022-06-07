@@ -22,11 +22,14 @@ ul {
 li {
    list-style: none;
    font-size: 16px;
-   text-transform: capitalize;
    line-height: 19px;
    color: #5697bf;
    margin: 0;
    padding: 0;
+}
+
+li::first-letter {
+   text-transform: capitalize;
 }
 
 .container {}
@@ -45,27 +48,30 @@ li {
    background-color: rgba(255, 255, 255, 0.6);
 }
 
-.overview{
+.overview {
    margin-bottom: 30px;
 }
-.weather-temperature img{
-margin-right: 5px;
-height: 64px;
-width: 64px;
+
+.weather-temperature img {
+   margin-right: 5px;
+   height: 64px;
+   width: 64px;
 
 }
-.weather-temperature strong{
+
+.weather-temperature strong {
    color: #5697bf;
    font-size: 64px;
    line-height: 1;
    font-weight: 400;
 }
 
-.weather-temperature .units{
+.weather-temperature .units {
    position: relative;
    font-size: 16px;
    top: -34px;
 }
-a{
+
+a {
    text-decoration: none;
 }
