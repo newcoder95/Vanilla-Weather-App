@@ -75,3 +75,16 @@ li::first-letter {
 a {
    text-decoration: none;
 }
+
+.weather-temperature .active{
+   color:#5697bf;
+   font-weight: bold;
+   cursor: default;
+}
+
+#fahrenheit-link{
+   cursor: default;
+}
+.active{
+   font-size: 20px;
+}
