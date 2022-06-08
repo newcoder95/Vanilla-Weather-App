@@ -88,3 +88,9 @@ a {
 .active{
    font-size: 20px;
 }
+
+#icon{
+   background-color: rgba(86,151,191,0.9);
+   border-radius: 50%;
+   size: 120%;
+}
