@@ -41,12 +41,14 @@ li::first-letter {
 }
 
 .weather-container {
-
-   padding: 20px;
+   min-width: 260px;
+   padding: 30px 40px 30px 30px;
    border: 3px solid #4d96c3;
    border-radius: 5px;
    background-color: rgba(255, 255, 255, 0.6);
+   margin: 20px;
 }
+
 
 .overview {
    margin-bottom: 30px;
@@ -106,4 +108,12 @@ a {
 #description {
    font-size: 18px;
    font-weight: 600;
+}
+
+.btn-primary {
+   max-width: 140px;
+}
+
+.form-control {
+   min-width: 170px;
 }
