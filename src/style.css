@@ -1,5 +1,5 @@
 body {
-   background: url('src/img/bg1.jpg');
+   background: url('img/bg.png');
    background-position: 0 0;
    background-repeat: repeat;
    background-size: cover;
@@ -107,4 +107,3 @@ a {
    font-size: 18px;
    font-weight: 600;
 }
-
