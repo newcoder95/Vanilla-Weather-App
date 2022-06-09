@@ -97,13 +97,13 @@ a {
 }
 
 #icon {
-   background-color: rgba(49,210,242, 0.9);
+   background-color: rgba(49, 210, 242, 0.9);
    border-radius: 50%;
    size: 120%;
    margin-right: 20px;
 }
 
-#description{
+#description {
    font-size: 18px;
    font-weight: 600;
 }
