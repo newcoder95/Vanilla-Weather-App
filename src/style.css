@@ -36,7 +36,7 @@ li::first-letter {
 
 .weather-wrapper {
    max-width: 800px;
-   margin: 50px auto;
+   margin: 100px auto;
    width: 100%;
 }
 
@@ -50,6 +50,11 @@ li::first-letter {
 
 .overview {
    margin-bottom: 30px;
+}
+
+.fa-location-dot {
+   color: white;
+   font-size: 22px;
 }
 
 .weather-temperature img {
@@ -76,21 +81,29 @@ a {
    text-decoration: none;
 }
 
-.weather-temperature .active{
-   color:#5697bf;
+.weather-temperature .active {
+   color: #5697bf;
    font-weight: bold;
    cursor: default;
 }
 
-#fahrenheit-link{
+#fahrenheit-link,
+#celsius-link {
    cursor: default;
 }
-.active{
+
+.active {
    font-size: 20px;
 }
 
-#icon{
-   background-color: rgba(86,151,191,0.9);
+#icon {
+   background-color: rgba(49,210,242, 0.9);
    border-radius: 50%;
    size: 120%;
+   margin-right: 20px;
+}
+
+#description{
+   font-size: 18px;
+   font-weight: 600;
 }
