@@ -4,6 +4,7 @@ body {
    background-repeat: repeat;
    background-size: cover;
    font-family: 'Mali';
+   color: #5697bf;
 }
 
 
@@ -42,7 +43,7 @@ li::first-letter {
 
 .weather-container {
    min-width: 260px;
-   padding: 30px 40px 30px 30px;
+   padding: 30px 40px 0px;
    border: 3px solid #4d96c3;
    border-radius: 5px;
    background-color: rgba(255, 255, 255, 0.6);
@@ -101,9 +102,12 @@ a {
 #icon {
    background-color: rgba(49, 210, 242, 0.9);
    border-radius: 50%;
-   size: 120%;
+   width: 30%;
+   height: 30%;
    margin-right: 20px;
 }
+
+#icon img {}
 
 #description {
    font-size: 18px;
@@ -116,4 +120,44 @@ a {
 
 .form-control {
    min-width: 170px;
+}
+
+.git-link {
+   /* font-size: 14px; */
+   /* Выбираем шрифт на минимальном расширении (например, 320px - 10px), формула: calc(мин.шрифт + (разница шрифта по макету и минимального)*(100vw/ширину полотна блока)) */
+   font-size: calc(10px + 4 * (100vw/800));
+}
+
+@media(max-width:767px) {
+   .git-link {
+      /* формулу вычислил фрилансер (разница+разница*70%) */
+      font-size: calc(10px + (4 + 4 * 0.7) * ((100vw-320px)/800));
+   }
+}
+
+
+/* ---------------Forecast row----------------------- */
+.weather-forecast {
+   margin-top: 20px;
+   text-align: center;
+   font-size: 16px;
+   font-weight: 600;
+}
+
+.col-2 img {
+   background-color: rgba(100, 221, 245, 0.9);
+   border-radius: 50%;
+   width: 70%;
+   margin: 10px 0;
+
+}
+
+.weather-forecast-temperatures {
+   font-size: 16px;
+
+}
+
+.weather-forecast-temperature-min {
+   opacity: 0.8;
+   font-size: 14px;
 }
