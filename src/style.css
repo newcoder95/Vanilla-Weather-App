@@ -10,9 +10,10 @@ body {
 
 
 h1 {
-   font-size: 28px;
-   line-height: 28px;
+   font-size: 32px;
+   line-height: 32px;
    color: #3b7faa;
+   font-weight: 700;
 }
 
 ul {
@@ -104,11 +105,12 @@ a {
 }
 
 #icon {
-   background-color: rgba(49, 210, 242, 0.9);
+   background-color: rgba(86, 151, 191, 0.6);
    border-radius: 50%;
-   width: 30%;
-   height: 30%;
+   width: 90px;
+   height: 90px;
    margin-right: 20px;
+   padding: 5px;
 }
 
 
@@ -148,9 +150,10 @@ a {
 }
 
 .col-2 img {
-   background-color: rgba(100, 221, 245, 0.9);
+   background-color: rgba(86, 151, 191, 0.7);
    border-radius: 50%;
-   width: 70%;
+   padding: 10px;
+   width: 70px;
    margin: 10px 0;
 
 }
