@@ -147,9 +147,10 @@ a {
    text-align: center;
    font-size: 16px;
    font-weight: 600;
+   align-items: center;
 }
 
-.col-2 img {
+#col img {
    background-color: rgba(86, 151, 191, 0.7);
    border-radius: 50%;
    padding: 10px;
@@ -158,12 +159,21 @@ a {
 
 }
 
-.col-2 {
+#col {
    transition: all 0.3s ease 0s;
+   margin-bottom: 10px;
 }
 
-.col-2:hover {
+
+#col:hover {
    transform: scale(1.2);
+}
+
+@media(max-width: 407px){
+  #col img {
+   padding: 5px;
+   width: 60px;
+} 
 }
 
 .weather-forecast-temperatures {

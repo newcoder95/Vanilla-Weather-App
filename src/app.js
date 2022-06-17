@@ -49,7 +49,7 @@ function displayForecast(response) {
       forecastHTML =
         forecastHTML +
         `
-    <div class="col-2">
+    <div class="col flex-wrap" id="col">
     <div class="weather-forecast-day">${formatDay(forecastDay.dt)}</div>
 
 
