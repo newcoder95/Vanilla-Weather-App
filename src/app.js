@@ -38,9 +38,7 @@ function formatDay(timestamp) {
 
 function displayForecast(response) {
   let forecast = response.data.daily;
-
   let forecastElement = document.querySelector("#forecast");
-
   let forecastHTML = `<div class="row">`;
   // let days = ["Wed", "Thu", "Fri", "Sat", "Sun", "Mon"];
 
@@ -136,16 +134,16 @@ function searchLocation(position) {
    axios.get(apiUrl).then(displayTemperature);
 }
 
-function getCurrentLocation(event) {
-   event.preventDefault();
-   navigator.geolocation.getCurrentPosition(searchLocation);
-}
+// function getCurrentLocation(event) {
+//    event.preventDefault();
+//    navigator.geolocation.getCurrentPosition(searchLocation);
+// }
 
 let form = document.querySelector("#search-form");
 form.addEventListener("submit", handleSubmit);
 
 
-let currentLocationButton = document.querySelector("#current-location-button");
-currentLocationButton.addEventListener("click", getCurrentLocation);
+// let currentLocationButton = document.querySelector("#current-location-button");
+// currentLocationButton.addEventListener("click", getCurrentLocation);
 
 search("Київ");
